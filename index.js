@@ -139,7 +139,7 @@ Event.prototype.rows = function (columnExclude = null, as = null) {
       : rows;
 };
 
-Event.prototype.rowsDiff = function (columnExclude = null, as = null) {
+Event.prototype.rowsDiff = function (columnExclude = null, as = null, ...columnsInclude) {
    if (!("rows" in this._e)) return [];
    var diff = function (before, after) {
       var obj = {};
@@ -151,7 +151,17 @@ Event.prototype.rowsDiff = function (columnExclude = null, as = null) {
       return obj;
    };
    const getRow = this.event() === "update" ? this._e.rows[0].after : this._e.rows[0];
-   const rowsDiff = this.event() === "update" ? this._e.rows.map((x) => diff(x.before, x.after)) : this._e.rows;
+   const rowsDiff =
+      this.event() === "update"
+         ? this._e.rows.map((x) => {
+              if (columnsInclude.length > 0) {
+                 let obj = {};
+                 columnsInclude.map((col) => (obj[col] = x[col]));
+                 return ({ ...obj, ...diff(x.before, x.after);})
+              }
+              return diff(x.before, x.after);
+           })
+         : this._e.rows;
    return columnExclude
       ? {
            [as ? as : columnExclude]: getRow[columnExclude],
