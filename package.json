@@ -1,0 +1,32 @@
+{
+  "name": "sql-listener",
+  "version": "0.1.0",
+  "description": "Binlog Listener for SQL Database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m-dary-nur/sql-listener"
+  },
+  "keywords": [
+    "mysql",
+    "mariadb",
+    "mysql",
+    "realtime",
+    "binlog"
+  ],
+  "author": "Muhammad Dary Nur Rabbani <m.dary.nur@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m-dary-nur/sql-listener/issues"
+  },
+  "homepage": "https://github.com/m-dary-nur/sql-listener",
+  "engines": {
+    "node": ">= 10.3.0"
+  },
+  "dependencies": {
+    "zongji": "^0.5.1"
+  }
+}

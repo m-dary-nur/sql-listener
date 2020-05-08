@@ -1,0 +1,125 @@
+{
+    "__e": {
+        "timestamp": 1576224066000,
+        "nextPosition": 79533,
+        "size": 117,
+        "tableId": 40,
+        "flags": 1,
+        "useChecksum": true,
+        "numberOfColumns": 7,
+        "tableMap": {
+            "40": {
+                "columnSchemas": [
+                    {
+                        "COLUMN_NAME": "userId",
+                        "COLLATION_NAME": null,
+                        "CHARACTER_SET_NAME": null,
+                        "COLUMN_COMMENT": "",
+                        "COLUMN_TYPE": "bigint(20)"
+                    },
+                    {
+                        "COLUMN_NAME": "userClientId",
+                        "COLLATION_NAME": null,
+                        "CHARACTER_SET_NAME": null,
+                        "COLUMN_COMMENT": "",
+                        "COLUMN_TYPE": "bigint(20)"
+                    },
+                    {
+                        "COLUMN_NAME": "userBranchId",
+                        "COLLATION_NAME": null,
+                        "CHARACTER_SET_NAME": null,
+                        "COLUMN_COMMENT": "",
+                        "COLUMN_TYPE": "bigint(20)"
+                    },
+                    {
+                        "COLUMN_NAME": "userEmail",
+                        "COLLATION_NAME": "utf8_general_ci",
+                        "CHARACTER_SET_NAME": "utf8",
+                        "COLUMN_COMMENT": "",
+                        "COLUMN_TYPE": "varchar(50)"
+                    },
+                    {
+                        "COLUMN_NAME": "userPassword",
+                        "COLLATION_NAME": "utf8_general_ci",
+                        "CHARACTER_SET_NAME": "utf8",
+                        "COLUMN_COMMENT": "",
+                        "COLUMN_TYPE": "varchar(100)"
+                    },
+                    {
+                        "COLUMN_NAME": "userToken",
+                        "COLLATION_NAME": "utf8_general_ci",
+                        "CHARACTER_SET_NAME": "utf8",
+                        "COLUMN_COMMENT": "",
+                        "COLUMN_TYPE": "text"
+                    },
+                    {
+                        "COLUMN_NAME": "userActive",
+                        "COLLATION_NAME": null,
+                        "CHARACTER_SET_NAME": null,
+                        "COLUMN_COMMENT": "",
+                        "COLUMN_TYPE": "int(1)"
+                    }
+                ],
+                "parentSchema": "client_1",
+                "tableName": "users",
+                "columns": [
+                    {
+                        "name": "userId",
+                        "charset": null,
+                        "type": 8
+                    },
+                    {
+                        "name": "userClientId",
+                        "charset": null,
+                        "type": 8
+                    },
+                    {
+                        "name": "userBranchId",
+                        "charset": null,
+                        "type": 8
+                    },
+                    {
+                        "name": "userEmail",
+                        "charset": "utf8",
+                        "type": 15,
+                        "metadata": {
+                            "max_length": 150
+                        }
+                    },
+                    {
+                        "name": "userPassword",
+                        "charset": "utf8",
+                        "type": 15,
+                        "metadata": {
+                            "max_length": 300
+                        }
+                    },
+                    {
+                        "name": "userToken",
+                        "charset": "utf8",
+                        "type": 252,
+                        "metadata": {
+                            "length_size": 2
+                        }
+                    },
+                    {
+                        "name": "userActive",
+                        "charset": null,
+                        "type": 3
+                    }
+                ]
+            }
+        },
+        "rows": [
+            {
+                "userId": 32,
+                "userClientId": 1,
+                "userBranchId": 1,
+                "userEmail": "email@email.com",
+                "userPassword": "$2a$10$p41f6lBYqk26dpw6XtUt9e1qszaNITvOHpiOD/ttKhtdH/SEvRO4i",
+                "userToken": null,
+                "userActive": 1
+            }
+        ]
+    }
+}
