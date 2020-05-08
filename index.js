@@ -157,7 +157,7 @@ Event.prototype.rowsDiff = function (columnExclude = null, as = null, ...columns
               if (columnsInclude.length > 0) {
                  let obj = {};
                  columnsInclude.map((col) => (obj[col] = x[col]));
-                 return ({ ...obj, ...diff(x.before, x.after);})
+                 return { ...obj, ...diff(x.before, x.after) };
               }
               return diff(x.before, x.after);
            })

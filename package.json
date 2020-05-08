@@ -1,6 +1,6 @@
 {
   "name": "@m-dary-nur/sql-listener",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Binlog Listener for SQL Database",
   "main": "index.js",
   "scripts": {
